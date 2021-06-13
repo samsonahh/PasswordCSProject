@@ -1,24 +1,63 @@
-<!DOCTYPE html>
-<html>
-  <link rel="stylesheet" href="style.css">
-  <head>
-    <title>Password Checker and Generator Project</title>
-  </head>
-  
-  <body>
-    <h1>Password Checker and Password Generator</h1>
-    <h2>Samson Wu, Oliver Luo, Yat Long Chan</h2>
-    <h3>The Password Checker </h3>
-    <p>
-    </p>
-    <img src ="https://i.imgur.com/2fOvpdb.png" alt = "Checker Example">
-  
-    <h3>The Password Generator</h3>
 
-    <p>
-    </p>
-  
-    <img src="https://i.imgur.com/u3LEXzi.png" alt="Generator Example">
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+	  <title>Star Wars LCG Database</title>
+  </head>
+
+  <body style="background-color: lightsteelblue; font-family: sans-serif">
+    <h1>Database for Star Wars: The Living Card Game</h1>
+    <h2>JonAlf Dyrland-Weaver, Period 0</h2>
+    <hr>
+    <ul>
+      <li><h3><a href="#">Project Link</a><h3></li>
+      <li>
+	<h3>Project Description</h3>
+	<p>This is a searchable database of cards for Star Wars: The Living Card Game. Users can search by card name, side, faction or pod.</p>	
+      </li>
+      <li>
+	<h3>Insturctions</h3>
+	<p>Follow the project link above to go to the main page. You will see a form with multiple options. Select the type of search you want to perform, enter the required information, and click submit. This will take you to the search results page. You will either see a single card or a list of multiple cards (depending on the type of search). If you see multiple cards, clicking on the card name will take you to that card's specific page. You can always go to the main page by clicking "search" in the upper right hand corner.</p>
+      </li>
+      <li>
+	<h3>How it works</h3>
+	<p>The full list of cards and their properties (including links to pictures) is saved in a .csv file. The card pictures are all stored in a separate directory. When a user searches, a python program reads the csv file into a list of dictionaries where each dictionary entry is one card with keys representing card properties (name, type, faction, side, cost, health, damage icons). The program then uses the query string to search for the card(s). To make things easier, when searching for the name of a card, the strings are all changed to lowercase. But users muse give the exact name of the card, otherwise no match will be found. Searches are preformed by going through the list of cards and checking the values for whatever key is being yused to search. All matches entries are put into a list of results. For example, if the user searches by card name, then the results list would only have one entry, but if the the user searches for side (light or dark), the results list will have many entries. If the results list has only one entry, the program generates a single card page that inlcudes all the card information and a picture. If there are multiple results, the program generates a page with a table, each row containing basic information about the card and a link that will then generate the single card page.</p>
+      </li>
+      <li>
+	<h3>Files</h3>
+	<ul>
+	  <li>final.html: This html file</li>
+	  <li>main.html: The main landing page for the project, containing the search form.</li>
+	  <li>search.py: Python prgram that is the action for the form in main.html. Reposinsible for parsing the quesry string, loading the cards into a dictionary and responding to the query. Calls functions in page_maker.py</li>
+	  <li>page_maker.py: Python program that generates the html pages for single or multiple card search results</li>
+	  <li>swlcg_cards_full.csv: csv file of all cards</li>
+	  <li>card_images/*: Directory containing images for each card, organized by a unique id number, These images were not uploaded to the homework server.</li>
+	</ul>
+      </li>
+      <li>
+	<h3>Resources</h3>
+	<ul>
+	  <li>Card information: <a href="http://www.cardgamedb.com/index.php/starwars/star-wars-card-spoilers">http://www.cardgamedb.com/index.php/starwars/star-wars-card-spoilers</a></li>
+	  <li>Card images: <a>http://picsofswlcgcards.com</a>
+	</ul>
+      </li>
+      <li>
+	<h3>Bugs, Errors and Things to be Aware of</h3>
+	<ul>
+	  <li>
+	    Searching by name must be an exact name match (aside from capitalization).
+	  </li>
+	  <li>
+	    If you try to seach by multiple categories, only the first one with data will be used.
+	  </li>
+	  <li>
+	    A maximum of 100 cards will be displayed, even if there are more matches.
+	  </li>
+	</ul>
+      </li>
+    </ul>
 
   </body>
 </html>
