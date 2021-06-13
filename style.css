@@ -1,27 +1,32 @@
 body {
-	background-color: white;
+	background-color:#2e2e2e;
 }
 
-h1 {
-	font-family: Arial;
-	font-size: 54px;
-	color: ;
+h1, h2 {
+	font-family: "Georgia", serif;
+	color:#BB86FC
 }
 
 h2 {
-	font-family: Arial;
-	font-size: 36px
+	border-bottom-style: dashed;
+	border-bottom-color: hotpink;
+	border-width: 2px;
+	margin-top: 100px;
+	text-align: center;
 }
 
-p {
-	font-family: Arial;
-	font-size: 20px;
+
+ul, p {
+	font-family: "Georgia", serif;
+	color: #03DAC6;
+} 
+
+a {
+	color: #CF6679;
 }
 
-ul {
-	font-family: Arial;
-	font-size: 25px;
-	color: ;
+h1 {
+	text-align:center;
+	font-size: 40px;
 }
-
 
