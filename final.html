@@ -15,15 +15,15 @@
       <li><h3><a href="#">Project Link</a><h3></li>
       <li>
 	<h3>Project Description</h3>
-	<p>This is a searchable database of cards for Star Wars: The Living Card Game. Users can search by card name, side, faction or pod.</p>	
+	<p></p>	
       </li>
       <li>
 	<h3>Insturctions</h3>
-	<p>Follow the project link above to go to the main page. You will see a form with multiple options. Select the type of search you want to perform, enter the required information, and click submit. This will take you to the search results page. You will either see a single card or a list of multiple cards (depending on the type of search). If you see multiple cards, clicking on the card name will take you to that card's specific page. You can always go to the main page by clicking "search" in the upper right hand corner.</p>
+	<p></p>
       </li>
       <li>
 	<h3>How it works</h3>
-	<p>The full list of cards and their properties (including links to pictures) is saved in a .csv file. The card pictures are all stored in a separate directory. When a user searches, a python program reads the csv file into a list of dictionaries where each dictionary entry is one card with keys representing card properties (name, type, faction, side, cost, health, damage icons). The program then uses the query string to search for the card(s). To make things easier, when searching for the name of a card, the strings are all changed to lowercase. But users muse give the exact name of the card, otherwise no match will be found. Searches are preformed by going through the list of cards and checking the values for whatever key is being yused to search. All matches entries are put into a list of results. For example, if the user searches by card name, then the results list would only have one entry, but if the the user searches for side (light or dark), the results list will have many entries. If the results list has only one entry, the program generates a single card page that inlcudes all the card information and a picture. If there are multiple results, the program generates a page with a table, each row containing basic information about the card and a link that will then generate the single card page.</p>
+	<p></p>
       </li>
       <li>
 	<h3>Files</h3>
