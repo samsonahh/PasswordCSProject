@@ -12,7 +12,7 @@ h2 {
 }
 
 
-ul, p, h3 {
+ul, p, h3, ol {
 	font-family: "Georgia", serif;
 	color: #03DAC6;
 } 
@@ -27,6 +27,6 @@ h1 {
 }
 
 p {
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 15px;
+	margin-right: 50px;
 }
